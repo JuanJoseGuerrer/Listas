@@ -6,14 +6,17 @@ public class ArrayLists {
 
     
     public static void main(String[] args) {
+        
         ArrayList<String> arrayList = new ArrayList<>();
         
-        System.out.println(arrayList.size());
-        System.out.println(arrayList.isEmpty());
+        System.out.println(arrayList.size()); //da el tamaño de la lista
+        System.out.println(arrayList.isEmpty()); //revisa si la lista esta vacia
         
-        arrayList.add("hola");
+        //añadir un nuevo elemento
+        arrayList.add("hola"); 
         arrayList.add("mundo");
         arrayList.add("cruel");
+        
         ArrayList<String> total = new ArrayList<>();
         total.add("nuevo");
         total.addAll(arrayList);
