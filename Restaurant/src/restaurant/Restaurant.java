@@ -1,16 +1,23 @@
 
 package restaurant;
 
+import restaurant.food.Dish;
 import restaurant.food.Menu;
+import restaurant.people.Customer;
+import restaurant.values.CustomerRole;
+import restaurant.values.DishType;
+import restaurant.values.DishVariation;
+
+
 
 
 public class Restaurant {
     
     public static void main(String[] args) {
-        Customer student = new Customer(CustomerRole.STUDENT, "asd");
+        Customer student = new Customer(CustomerRole.STUDENT, "123");
         student.sellFood();
         
-        Customer administrative = new Customer(CustomerRole.ADMINISTRATIVE, "a");
+        Customer administrative = new Customer(CustomerRole.ADMINISTRATIVE, "456");
         administrative.sellFood();
         
         Menu menu = new Menu();
